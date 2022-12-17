@@ -13,6 +13,7 @@
 		D93FB123294E033900676CA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93FB122294E033900676CA6 /* Preview Assets.xcassets */; };
 		D93FB12C294E08A100676CA6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB12B294E08A100676CA6 /* Login.swift */; };
 		D93FB12E294E13CD00676CA6 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB12D294E13CD00676CA6 /* Register.swift */; };
+		D93FB130294E168600676CA6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93FB12F294E168600676CA6 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D93FB122294E033900676CA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D93FB12B294E08A100676CA6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D93FB12D294E13CD00676CA6 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		D93FB12F294E168600676CA6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D93FB11D294E033800676CA6 /* ContentView.swift */,
 				D93FB11F294E033900676CA6 /* Assets.xcassets */,
 				D93FB121294E033900676CA6 /* Preview Content */,
+				D93FB12F294E168600676CA6 /* Home.swift */,
 			);
 			path = SwiftUILoginRegister;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				D93FB12C294E08A100676CA6 /* Login.swift in Sources */,
 				D93FB11E294E033800676CA6 /* ContentView.swift in Sources */,
+				D93FB130294E168600676CA6 /* Home.swift in Sources */,
 				D93FB12E294E13CD00676CA6 /* Register.swift in Sources */,
 				D93FB11C294E033800676CA6 /* SwiftUILoginRegisterApp.swift in Sources */,
 			);
