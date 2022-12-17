@@ -1,5 +1,5 @@
 //
-//  Login.swift
+//  Register.swift
 //  SwiftUILoginRegister
 //
 //  Created by Dilda Ezgi Metincan on 17.12.2022.
@@ -7,56 +7,41 @@
 
 import SwiftUI
 
-struct Login: View {
+struct Register: View {
+    @State var userName = ""
     @State var password = ""
     var social = ["google", "facebook"]
+    
     var body: some View {
         VStack {
             
             HStack{
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Tekrar Merhaba").fontWeight(.bold)
-                    Text("Dilda").font(.title).fontWeight(.bold)
-                    
-                    Button(action: {}) {
-                        Text("Bu ben değilim.")
-                            .font(.system(size: 14))
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("blue"))
-                    }
-                } //VStack bitisi
-                Spacer(minLength: 0) //vstack icindekileri sola yasladi
-                Image("user")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 85, height: 85)
-                    .clipShape(Circle())
-            } //HStack bitisi
-            .padding(.horizontal, 25) //hstack icindekileri sagdan soldan 25 paddingledi
+                Text("Hesap Oluştur").font(.title).fontWeight(.bold)
+                Spacer()
+            }.padding(.horizontal, 25)
             .padding(.top, 30)
             
             VStack(alignment: .leading, spacing: 15) {
-                Text("Parola")
-                    .font(.caption)
-                    .fontWeight(.bold)
-                    .foregroundColor(.gray)
-                TextField("Parola", text: $password).padding()
+                Text("Kullanıcı Adı").font(.caption).fontWeight(.bold).foregroundColor(.gray)
+                TextField("Email Adresi", text: $userName).padding()
                     .background(Color.white)
                     .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
                     .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
-                Button(action: {}) {
-                    Text("Parolamı Unuttum").font(.system(size: 15))
-                        .fontWeight(.bold)
-                        .foregroundColor(Color("blue"))
-                }.padding(.top, 10) //butona bosluk
-            } //vstack parola alani bitisi
-            .padding(.horizontal, 25)
+                
+                Text("Parola").font(.caption).fontWeight(.bold).foregroundColor(.gray)
+                TextField("Parolanız", text: $userName).padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                    .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: -5)
+            }.padding(.horizontal, 25)
             .padding(.top, 25)
             
-            //oturum acma butonu
+            //kayit olma butonu
+            
             Button(action: {}) {
-                Text("Oturum Aç").font(.system(size: 20))
+                Text("Kayıt Ol").font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .padding(.vertical)
@@ -67,7 +52,6 @@ struct Login: View {
             }.padding(.horizontal, 25)
             .padding(.top, 25)
             
-            //sosyal medya butonlari
             Button(action: {}) {
                 HStack(spacing: 35) {
                     Image(systemName: "faceid").font(.system(size: 20))
@@ -91,8 +75,8 @@ struct Login: View {
     }
 }
 
-struct Login_Previews: PreviewProvider {
+struct Register_Previews: PreviewProvider {
     static var previews: some View {
-        Login()
+        Register()
     }
 }
